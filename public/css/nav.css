@@ -1,0 +1,67 @@
+body {
+  background-color: var(--accent-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* background-color: var(--primary-bg-color); */
+  height: min(3vw, 60px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: max(1vh, 30px) 2vw max(0.7vh, 10px) 2vw;
+  position: fixed; /* Add this line */
+  width: 100%; /* Ensure the header spans the full width */
+  z-index: 1000; /* Ensure the header stays on top */
+  top: 0; /* Fix the header to the top */
+  left: 0; /* Fix the header to the left */
+  box-sizing: border-box;
+}
+
+
+header img {
+  width: clamp(60px, 10vw, 100px);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 4vw;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  transition: color 0.2s ease-in-out;
+
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  display: inline-block;
+  padding: 8px 10px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--white-color);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+a:hover {
+  color: var(--primary-font-color);
+}

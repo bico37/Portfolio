@@ -1,0 +1,47 @@
+/* hero section */
+#hero-section{
+    display: flex;
+    height: 100vh;
+}
+
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+}
+
+#hero-text-content{
+    margin-left: 6vw;
+}
+
+
+#hero-text-content p:nth-of-type(1) {
+    font-size: clamp(var(--font-size-m), 1.5vw, var(--font-size-l));
+    font-weight: 500;
+    color: var(--primary-font-color);
+}
+#hero-text h1 {
+    font-size: clamp(var(--font-size-xl), 3vw, var(--font-size-xxxxl));
+    
+    font-weight: 700;
+    color: var(--accent-color);
+    margin: var(--margin-xl) 0;
+    line-height: 1;
+}
+#hero-text-content p:nth-of-type(2) {
+    /* font-size: clamp(var(--font-size-m), 2vw, var(--font-size-l));*/
+    font-size: 2vw;
+    font-weight: 500;
+    color: var(--primary-font-color);
+}
+
+#hero-img {
+    flex: 1;
+    background-color: aqua;
+}
+
+#hero-img img {
+
+}
