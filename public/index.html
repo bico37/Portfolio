@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- css -->
-     <link rel="stylesheet" href="./css/global.css">
-     <link rel="stylesheet" href="./css/nav.css">
-     <link rel="stylesheet" href="./css/start.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/start.css" />
+
+    <!-- js -->
+    <script src="./js/hero-animation.js" defer></script>
+  </head>
+  <script>
+
+  </script>
+  <body>
     <header>
-        <div id="header-logo"><img src="./img/logo.png" alt=""></div>
-        <nav>
-            <ul>
-                <li><a class="nav-links" href="#">Home</a></li>
-                <li><a class="nav-links" href="#">About Me</a></li>
-                <li><a class="nav-links" href="#">Projects</a></li>
-                <li><a class="nav-links" href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <div id="header-logo"><img src="./img/logo.png" alt="" /></div>
+      <nav>
+        <ul>
+          <li><a class="nav-links" href="#">Home</a></li>
+          <li><a class="nav-links" href="#">About Me</a></li>
+          <li><a class="nav-links" href="#">Projects</a></li>
+          <li><a class="nav-links" href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="hero-section">
-        <div id="hero-text">
-            <div id="hero-text-content">
-                <p>Hello</p>
-                <h1>I'm Erik Bergmair</h1>
-                <p>Web Developer</p>
+      <div id="hero-text">
+        <div id="hero-text-content">
+          <p>Hello</p>
+          <h1>I'm Erik Bergmair</h1>
+          <p>
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "Web Designer.", "Fullstack Developer.", "UI/UX Designer." ]'
+            ></span>
+          </p>
 
-                <div id="hero-btns">
-                    <a href="#" class="btn-basic" >See My Work</a>
-                    <a href="#" class="btn-basic" >Contact Me</a>
-                </div>
-            </div>
+          <div id="hero-btns">
+            <a href="#" class="btn-basic">See My Work</a>
+            <a href="#" class="btn-basic">Contact Me</a>
+          </div>
         </div>
-        <div id="hero-img">
-            <!-- <img src="./img/start/me.png" alt=""> -->
-        </div>
+      </div>
+      <div id="hero-img">
+        <!-- <img src="./img/start/me.png" alt=""> -->
+      </div>
     </section>
-</body>
+  </body>
 </html>
