@@ -18,7 +18,7 @@
 
 /* text */
 #hero-text-content p:nth-of-type(1) {
-  font-size: clamp(var(--font-size-m), 1.5vw, var(--font-size-l));
+  font-size: clamp(var(--font-size-m), 1.8vw, var(--font-size-l));
   font-weight: 500;
   color: var(--primary-font-color);
 }
@@ -33,10 +33,10 @@
 
 /* text animation */
 #hero-text-content p:nth-of-type(2) {
-    font-size: clamp(var(--font-size-l), 2vw, var(--font-size-xl));
-    /* font-size: 2vw; */
-    font-weight: 500;
-    color: var(--primary-font-color);
+  font-size: clamp(var(--font-size-l), 2vw, var(--font-size-xl));
+  /* font-size: 2vw; */
+  font-weight: 500;
+  color: var(--primary-font-color);
 
   line-height: 0.8em !important;
   text-transform: none;
@@ -52,11 +52,6 @@
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-#hero-text-content p:nth-of-type(2) {
-}
-
-
-
 
 /* buttons */
 #hero-btns {
@@ -81,6 +76,11 @@
   min-width: 8vw;
   text-align: center;
 }
+#hero-btns a:active {
+  transform: translateY(2px);
+  scale: 0.98;
+}
+
 #hero-btns a:nth-of-type(1) {
   border: 1.5px solid var(--accent-color);
 }
@@ -101,8 +101,55 @@
 /* right side */
 #hero-img {
   flex: 1;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 #hero-img img {
+}
+
+
+
+/* Section 2 */
+#section-aboutMe {
+  height: 50vh;
+  background-color: var(--primary-bg-color);
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutMe-img {
+  display: flex;
+  justify-content: right;
+  margin-right: 10vw;
+}
+
+#section-aboutMe img {
+  width: 10vw;
+  padding: 0.2vw;
+
+  border-left: 8px solid var(--primary-color);
+  border-bottom: 8px solid var(--primary-color);
+
+  /* border-radius: 1vw; */
+  border-radius: 20px 0 20px 20px;
+}
+
+
+#aboutMe-infos {
+  max-width: 30vw;
+}
+
+#aboutMe-infos h1 {
+  display: inline-block;
+  font-size: clamp(var(--font-size-l), 2vw, var(--font-size-xl));
+  font-weight: 700;
+  /* color: var(--accent-color); */
+  margin-bottom: var(--margin-xxxl);
+  padding-bottom: var(--padding-m);
+
+  border-bottom: 3px solid var(--accent-color);
 }

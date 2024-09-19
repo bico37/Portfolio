@@ -33,7 +33,7 @@ body {
   --accent-bg-color: hsl(0, 0%, 17%); /*#2C2C2C*/
 
   /* Primary, Secondary, Accent colors */
-  --primary-color: hsl(243, 68%, 48%); /*#2f27ce*/
+  --primary-color: hsl(243, 98%, 66%); /*#2f27ce*/
   --secondary-color: hsl(0, 0%, 34%); /*#575757*/
   --accent-color: hsl(22, 100%, 43%); /*#DA4F00*/
 
@@ -52,6 +52,7 @@ body {
   --margin-l: 1.25rem;
   --margin-xl: 1.75rem;
   --margin-xxl: 2.5rem;
+  --margin-xxxl: 5rem;
 
   /* Padding */
   --padding-xxs: 0.25rem;
