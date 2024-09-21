@@ -76,4 +76,13 @@ body {
   --font-size-xxxxl: 6rem;
   --font-size-xxxxxl: 8rem;
   --font-size-xxxxxxl: 10rem;
+
+  --side-padding: 5vw;
+
+  /* screen max width */
+  --screen-sm: 576px;
+  --screen-md: 768px;
+  --screen-lg: 992px;
+  --screen-xl: 1200px;
+  --screen-xxl: 1400px;
 }

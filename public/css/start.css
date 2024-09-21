@@ -1,3 +1,22 @@
+/* root */
+.side-padding {
+  max-width: var(--screen-xxl ); /* Maximale Breite des Containers */
+  padding-left: var(--side-padding); /* Abstand links */
+  padding-right: var(--side-padding); /* Abstand rechts */
+}
+.section-headline{
+  font-size: clamp(var(--font-size-l), 2vw, var(--font-size-xl));
+  font-weight: 700;
+  color: var(--primary-font-color);
+  
+  display: inline-block;
+  padding-bottom: var(--padding-m);
+  border-bottom: 3px solid var(--accent-color);
+
+  margin-bottom: 3vw; /* Abstand zu den Boxen */
+}
+
+
 /* hero section */
 #hero-section {
   display: flex;
@@ -113,7 +132,8 @@
 
 /* Section 2 */
 #section-aboutMe {
-  height: 50vh;
+  padding: 5vw 0;
+  /* height: 50vh; */
   background-color: var(--primary-bg-color);
 
   display: grid;
@@ -137,26 +157,21 @@
   border-left: 8px solid var(--primary-color);
   border-bottom: 8px solid var(--primary-color);
 
+  /* box-shadow: -20px 20px 0px -6px var(--accent-color); */
+
   /* border-radius: 1vw; */
   border-radius: 20px 0 20px 20px;
-}
 
-/* headline */
-#aboutMe-infos h1 {
-  display: inline-block;
-  font-size: clamp(var(--font-size-l), 2vw, var(--font-size-xl));
-  font-weight: 700;
-  /* color: var(--accent-color); */
-  margin-bottom: var(--margin-xxl);
-  padding-bottom: var(--padding-m);
-
-  border-bottom: 3px solid var(--accent-color);
 }
 
 /* infos */
 #aboutMe-infos {
   width: clamp(300px, 30vw, 500px);
   padding: 0 var(--padding-m);
+}
+
+#aboutMe-infos h1 {
+  margin-bottom: var(--margin-m);
 }
 
 #infos-text{
@@ -168,9 +183,27 @@
 #infos-text{
   font-size: var(--font-size-sm);
   margin: var(--margin-l) 0 ;
+  line-height: 1.4;
 }
 
+#infos-column {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Erste Spalte passt sich dem Inhalt an, zweite nimmt den Rest ein */
+  gap: var(--margin-m); /* Abstand zwischen den Zeilen */
+}
 
+#infos-column p {
+  display: contents; /* Entfernt die Umrandung des <p> Elements, sodass der Text einfach im Grid fließt */
+}
+
+.infos-firstRow {
+  font-weight: bold;
+  text-align: left; /* Text linksbündig in der ersten Spalte */
+}
+
+#infos-column span + text {
+  text-align: left; /* Text rechtsbündig für gute Reihenfolge */
+}
 
 /* Button */
 #aboutMe-btn{
@@ -195,4 +228,39 @@
 
 #aboutMe-btn:hover p{
   color: var(--black-color);
+}
+
+.textBold{
+  font-weight: bold;
+}
+
+
+
+
+/* section 3 - what i do */
+#whatIDo {
+  padding: 5vw 0;
+  background-color: var(--secondary-bg-color);
+}
+
+#whatIDo-container {
+  margin: 0 auto; /* Zentriert den Container */  
+}
+
+
+
+#whatIDo-wrapper {
+  display: flex;
+  gap: 4vw;
+  justify-content: center; /* Boxen werden in der Mitte ausgerichtet */
+}
+
+.whatIDo-box {
+  width: 40vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-m) var(--padding-l);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
