@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  web:
+    image: php:8.0-apache
+    container_name: php-portfolio
+    volumes:
+      - ./htdocs:/var/www/html
+    ports:
+      - "9000:80"
+    networks:
+      - portfolio_network
+
+  db_server:
+    image: mysql:latest
+    container_name: mysql-portfolio-db
+    environment:
+      MYSQL_ROOT_PASSWORD: portfolio_password
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - portfolio_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin-portfolio
+    environment:
+      PMA_HOST: db_server
+      MYSQL_ROOT_PASSWORD: portfolio_password
+    ports:
+      - "9001:80"
+    networks:
+      - portfolio_network
+
+volumes:
+  db_data:
+
+networks:
+  portfolio_network:
