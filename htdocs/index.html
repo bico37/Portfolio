@@ -1,159 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/start.css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <!-- js -->
-    <script src="./js/hero-animation.js" defer></script>
-  </head>
-  <script>
+  <!-- multiple js -->
+  <link href="assets/css/multiple.css" rel="stylesheet">
+  <script src="assets/js/multiple.min.js"></script>
 
-  </script>
-  <body>
-    <header>
-      <div id="header-logo"><img src="./assets/img/logo.png" alt="" /></div>
-      <nav>
-        <ul>
-          <li><a class="nav-links" href="#">Home</a></li>
-          <li><a class="nav-links" href="#">About Me</a></li>
-          <li><a class="nav-links" href="#">Projects</a></li>
-          <li><a class="nav-links" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/start.css" />
 
-    <section id="hero-section">
-      <div id="hero-text">
-        <div id="hero-text-content">
-          <p>Hello</p>
-          <h1>I'm Erik Bergmair</h1>
-          <p>
-            <span
-              class="txt-rotate"
-              data-period="2000"
-              data-rotate='[ "Web Designer.", "Fullstack Developer.", "UI/UX Designer." ]'
-            ></span>
-          </p>
+  <!-- js -->
+  <script src="./js/start-style.js" defer></script>
+</head>
+<script>
 
-          <div id="hero-btns">
-            <a href="#" class="btn-basic">See My Work</a>
-            <a href="#" class="btn-basic">Contact Me</a>
-          </div>
+</script>
+
+<body>
+  <header>
+    <div id="header-logo"><img src="./assets/img/logo.png" alt="" /></div>
+    <nav>
+      <ul>
+        <li><a class="nav-links" href="#">Home</a></li>
+        <li><a class="nav-links" href="#">About Me</a></li>
+        <li><a class="nav-links" href="#">Projects</a></li>
+        <li><a class="nav-links" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero-section">
+    <div id="hero-text">
+      <div id="hero-text-content">
+        <p>Hello</p>
+        <h1>I'm Erik Bergmair</h1>
+        <p>
+          <span class="txt-rotate" data-period="2000"
+            data-rotate='[ "Web Designer.", "Fullstack Developer.", "UI/UX Designer." ]'></span>
+        </p>
+
+        <div id="hero-btns">
+          <a href="#" class="btn-basic">See My Work</a>
+          <a href="#" class="btn-basic">Contact Me</a>
         </div>
       </div>
-      <div id="hero-img">
-        <!-- <img src="./img/start/me.png" alt=""> -->
+    </div>
+    <div id="hero-img">
+      <!-- <img src="./img/start/me.png" alt=""> -->
+    </div>
+  </section>
+
+
+  <section id="section-aboutMe">
+
+    <div id="aboutMe-img">
+      <img src="./assets/img/start/me.jpg" alt="">
+
+    </div>
+
+    <div id="aboutMe-infos" class="side-padding">
+      <h1 class="section-headline">About Me</h1>
+      <p id="infos-text">Hello I am <span class="textBold">Erik Bergmair</span> a passionate developer and photographer.
+        This site gives you a glimpse into the projects and skills I've developed over the years.
+        Whether it's web design, programming, or photography –
+        here you'll find everything I create with passion. Feel free to explore and get inspired!</p>
+
+      <div id="infos-column">
+        <p><span class="infos-firstRow">Name:</span> Erik Bergmair</p>
+        <p><span class="infos-firstRow">Age:</span> 16</p>
+        <p><span class="infos-firstRow">Location:</span> Linz, Austria</p>
+        <p><span class="infos-firstRow">Email:</span> bergmairerik@gmail.com</p>
+        <p><span class="infos-firstRow">Phone:</span> +43 6602512933</p>
       </div>
-    </section>
 
-
-    <section id="section-aboutMe">
-
-      <div id="aboutMe-img">
-        <img src="./assets/img/start/me.jpg" alt="">
-
+      <div id="aboutMe-btn" class="btn-basic">
+        <p>Download CV</p>
       </div>
-
-      <div id="aboutMe-infos" class="side-padding">
-        <h1 class="section-headline">About Me</h1>
-        <p id="infos-text">Hello I am <span class="textBold">Erik Bergmair</span> a passionate developer and photographer. 
-          This site gives you a glimpse into the projects and skills I've developed over the years. 
-          Whether it's web design, programming, or photography – 
-          here you'll find everything I create with passion. Feel free to explore and get inspired!</p>
-
-          <div id="infos-column">
-            <p><span class="infos-firstRow">Name:</span> Erik Bergmair</p>
-            <p><span class="infos-firstRow">Age:</span> 16</p>
-            <p><span class="infos-firstRow">Location:</span> Linz, Austria</p>
-            <p><span class="infos-firstRow">Email:</span> bergmairerik@gmail.com</p>
-            <p><span class="infos-firstRow">Phone:</span> +43 6602512933</p>
-          </div>
-
-        <div id="aboutMe-btn" class="btn-basic"><p>Download CV</p></div>
-      </div>
-    </section>
+    </div>
+  </section>
 
 
-    <section id="whatIDo">
-      <div id="whatIDo-container" class="side-padding">
-        <h1 class="section-headline">What I Do</h1>
-        <div id="whatIDo-wrapper">
-          
-          <div class="whatIDo-box">
-            <img src="./assets/img/start/webDev.png" alt="">
-            <h2>Web Development</h2>
-            <p>Designing and developing modern websites using Figma, HTML, CSS, JavaScript, TypeScript, and PHP to create responsive and interactive user experiences.</p>
-          </div>
-          
-          <div class="whatIDo-box">
-            <img src="./assets/img/start/programing.png" alt="">
-            <h2>Software Development</h2>
-            <p>Creating software solutions and applications with Java, working on backend systems, and implementing database management to ensure robust and efficient programs.</p>
-          </div>
-          
-          <div class="whatIDo-box">
-            <img src="./assets/img/start/production.png" alt="">
-            <h2>Photography & Media Production</h2>
-            <p>Capturing stunning images and videos, editing content for visual storytelling, and integrating audio to enhance the overall multimedia experience.</p>
-          </div>
-          
+  <section id="whatIDo">
+    <div id="whatIDo-container" class="side-padding">
+      <h1 class="section-headline">What I Do</h1>
+      <div id="whatIDo-wrapper">
+
+        <div class="whatIDo-box">
+          <img src="./assets/img/start/webDev.png" alt="">
+          <h2>Web Development</h2>
+          <p>Designing and developing modern websites using Figma, HTML, CSS, JavaScript, TypeScript, and PHP to create
+            responsive and interactive user experiences.</p>
         </div>
+
+        <div class="whatIDo-box">
+          <img src="./assets/img/start/programing.png" alt="">
+          <h2>Software Development</h2>
+          <p>Creating software solutions and applications with Java, working on backend systems, and implementing
+            database management to ensure robust and efficient programs.</p>
+        </div>
+
+        <div class="whatIDo-box">
+          <img src="./assets/img/start/production.png" alt="">
+          <h2>Photography & Media Production</h2>
+          <p>Capturing stunning images and videos, editing content for visual storytelling, and integrating audio to
+            enhance the overall multimedia experience.</p>
+        </div>
+
       </div>
-    </section>    
+    </div>
+  </section>
 
-    <section id="skills">
-      <div id="skills-container" class="side-padding">
-        <h1 class="section-headline">Key Skills</h1>
-        <div id="keySkills-wrapper">
+  <section id="skills">
+    <div id="skills-container" class="side-padding">
+      <h1 class="section-headline">Key Skills</h1>
+      <div id="keySkills-wrapper">
 
-          <div class="keySkill">
-            <img src="./assets/img/start/skills/html5.png" alt="">
-            <p>HTML</p>
-          </div>
-          <div class="keySkill">
-            <img src="./assets/img/start/skills/css3.png" alt="">
-            <p>CSS</p>
-          </div>
-          <div class="keySkill">
-            <img src="./assets/img/start/skills/javascript.png" alt="">
-            <p>JavaScript</p>
-          </div>
-          <div class="keySkill">
-            <img src="./assets/img/start/skills/typescript.png" alt="">
-            <p>TypeScript</p>
-          </div>
-          <div class="keySkill">
+        <div class="keySkill">
+          <img src="./assets/img/start/skills/html5.png" alt="">
+          <p>HTML</p>
+        </div>
+        <div class="keySkill">
+          <img src="./assets/img/start/skills/css3.png" alt="">
+          <p>CSS</p>
+        </div>
+        <div class="keySkill">
+          <img src="./assets/img/start/skills/javascript.png" alt="">
+          <p>JavaScript</p>
+        </div>
+        <div class="keySkill">
+          <img src="./assets/img/start/skills/typescript.png" alt="">
+          <p>TypeScript</p>
+        </div>
+        <!-- <div class="keySkill">
             <img src="./assets/img/start/skills/php.png" alt="">
             <p>PHP</p>
-          </div>
-          <div class="keySkill">
-            <img src="./assets/img/start/skills/java.png" alt="">
-            <p>Java</p>
-          </div>
-          <div class="keySkill">
-            <img src="./assets/img/start/skills/figma.png" alt="">
-            <p>Figma</p>
+          </div> -->
+        <div class="keySkill">
+          <img src="./assets/img/start/skills/java.png" alt="">
+          <p>Java</p>
+        </div>
+        <div class="keySkill">
+          <img src="./assets/img/start/skills/figma.png" alt="">
+          <p>Figma</p>
 
         </div>
-
       </div>
-    </section>
-    
-    
-  </bodp
-</html>
+
+      <!-- other skills -->
+      <h1 class="section-headline" id="skills-headline">Additional Skills</h1>
+      <div id="skills-wrapper">
+
+        <div class="skill">
+          <img src="./assets/img/start/skills/datagrip.png" alt="DataGrip">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/docker.png" alt="Docker">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/git.png" alt="Git">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/github.png" alt="GitHub">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/nodejs.png" alt="Node.js">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/npm.png" alt="npm">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/expressjs.png" alt="Express.js">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/json.png" alt="JSON">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/vscode.png" alt="VS Code">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/babylon.png" alt="Babylon">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/intellij.png" alt="IntelliJ">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/bash.png" alt="Bash">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/powershell.png" alt="PowerShell">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/raspberrypi.png" alt="Raspberry Pi">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/photoshop.png" alt="Photoshop">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/premierePro.png" alt="Premiere Pro">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/audition.png" alt="Audition">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/lightroom.png" alt="Lightroom">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/firefly.png" alt="Firefly">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/word.png" alt="Word">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/excel.png" alt="Excel">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/powerpoint.png" alt="PowerPoint">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/outlook.png" alt="Outlook">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/windows.png" alt="Windows">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/cisco.png" alt="Cisco">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/canva.png" alt="Canva">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/trello.png" alt="Trello">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/arduino.png" alt="Arduino">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/notion.png" alt="Notion">
+        </div>
+      </div>
+
+      <h1 class="section-headline" id="skills-headline" class="lowerSkillGap">Currently learning...</h1>
+      <div id="skills-wrapper" >
+        <div class="skill">
+          <img src="./assets/img/start/skills/webflow.png" alt="Webflow">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/mysql.png" alt="MySQL">
+        </div>
+        <div class="skill">
+          <img src="./assets/img/start/skills/php.png" alt="Php">
+      </div>
+
+  </section>
+
+
+  </bodp </html>

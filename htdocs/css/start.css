@@ -1,22 +1,20 @@
 /* root */
 .side-padding {
-  max-width: var(--screen-xxl ); /* Maximale Breite des Containers */
+  max-width: var(--screen-xxl); /* Maximale Breite des Containers */
   padding-left: var(--side-padding); /* Abstand links */
   padding-right: var(--side-padding); /* Abstand rechts */
 }
-.section-headline{
+.section-headline {
   font-size: clamp(var(--font-size-l), 2vw, var(--font-size-xl));
   font-weight: 700;
   color: var(--primary-font-color);
-  
+
   display: inline-block;
   padding-bottom: var(--padding-m);
   border-bottom: 3px solid var(--accent-color);
 
-  margin-bottom: 3vw; /* Abstand zu den Boxen */
+  margin-bottom: 3vw;
 }
-
-
 /* hero section */
 #hero-section {
   display: flex;
@@ -128,8 +126,6 @@
 #hero-img img {
 }
 
-
-
 /* Section 2 */
 #section-aboutMe {
   padding: 5vw 0;
@@ -161,7 +157,6 @@
 
   /* border-radius: 1vw; */
   border-radius: 20px 0 20px 20px;
-
 }
 
 /* infos */
@@ -174,15 +169,15 @@
   margin-bottom: var(--margin-m);
 }
 
-#infos-text{
+#infos-text {
   color: var(--primary-font-color);
   margin: var(--margin-m) 0;
   line-height: 1.3;
 }
 
-#infos-text{
+#infos-text {
   font-size: var(--font-size-sm);
-  margin: var(--margin-l) 0 ;
+  margin: var(--margin-l) 0;
   line-height: 1.4;
 }
 
@@ -206,8 +201,8 @@
 }
 
 /* Button */
-#aboutMe-btn{
-  color: var(--primary-font-color); 
+#aboutMe-btn {
+  color: var(--primary-font-color);
   border: white 1.5px solid;
 
   margin-top: var(--margin-xxl);
@@ -226,16 +221,13 @@
   color: var(--black-color);
 }
 
-#aboutMe-btn:hover p{
+#aboutMe-btn:hover p {
   color: var(--black-color);
 }
 
-.textBold{
+.textBold {
   font-weight: bold;
 }
-
-
-
 
 /* section 3 - what i do */
 #whatIDo {
@@ -244,10 +236,8 @@
 }
 
 #whatIDo-container {
-  margin: 0 auto; /* Zentriert den Container */  
+  margin: 0 auto; /* Zentriert den Container */
 }
-
-
 
 #whatIDo-wrapper {
   display: flex;
@@ -283,7 +273,6 @@
 .whatIDo-box img {
   width: 5vw !important;
   margin: var(--margin-l) 0;
-
 }
 
 /* hover */
@@ -291,7 +280,7 @@
   transform: translateY(-5px);
   /* background-color: var(--accent-color); */
 }
-.whatIDo-box:hover h2{
+.whatIDo-box:hover h2 {
   color: var(--accent-color);
 }
 
@@ -301,7 +290,7 @@
   background-color: var(--primary-bg-color);
 }
 #skills-container {
-  margin: 0 auto; /* Zentriert den Container */  
+  margin: 0 auto; /* Zentriert den Container */
 }
 
 /* key skills */
@@ -321,6 +310,15 @@
   transition: all 0.3s ease;
 }
 
+.keySkill:hover {
+  transform: translateY(-5px);
+  background-color: var(--primary-color);
+  /* color: var(--primary-color); */
+}
+.keySkill:hover p {
+  /* color: var(--primary-color); */
+}
+
 .keySkill img {
   width: 3vw;
   margin: var(--margin-l) 0;
@@ -329,4 +327,44 @@
 .keySkill p {
   font-size: var(--font-size-m);
   font-weight: 600;
+}
+
+/* Additional Skills */
+#skills-headline {
+  margin-top: var(--margin-xxxl);
+}
+
+#skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: var(--margin-xl);
+  /* justify-content: center; */
+}
+
+
+.skill{
+  display: grid;
+  place-items: center;
+  width: 3.5vw;
+  height: 3.5vw;
+  padding: var(--padding-m);
+
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  box-shadow: 4px 4px 100px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;  
+}
+
+.skill img {
+  width: 90%;
+  object-fit: contain;
+}
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+/* learning */
+.lowerSkillGap {
+  margin-top: var(--margin-s);
 }
