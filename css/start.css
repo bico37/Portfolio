@@ -129,12 +129,13 @@
 /* Section 2 */
 #section-aboutMe {
   padding: 5vw 0;
-  /* height: 50vh; */
   background-color: var(--primary-bg-color);
+}
 
+#aboutMe-wrapper{
+  margin: 0 auto; /* Zentriert den Container */
   display: grid;
   grid-template-columns: 50% 50%;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
 }

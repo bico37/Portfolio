@@ -56,10 +56,10 @@ window.onload = function () {
 
 
 // Multiple
-document.addEventListener("DOMContentLoaded", function () {
-  new Multiple({
-    selector: '.keySkill',
-    background: true,
-    threshold: 150
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   new Multiple({
+//     selector: '.keySkill',
+//     background: true,
+//     threshold: 150
+//   });
+// });
