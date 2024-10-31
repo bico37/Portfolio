@@ -60,6 +60,10 @@
     width: 2vw;
     height: 2vw;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#socials img:hover {
+    transform: translateY(-3px);
 }
 
 /* form */
