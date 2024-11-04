@@ -1,0 +1,109 @@
+/* root */
+.side-padding {
+  max-width: var(--screen-xxl); /* Maximale Breite des Containers */
+  padding-left: var(--side-padding); /* Abstand links */
+  padding-right: var(--side-padding); /* Abstand rechts */
+}
+.section-headline {
+  font-size: clamp(var(--font-size-l), 2vw, var(--font-size-xl));
+  font-weight: 700;
+  color: var(--primary-font-color);
+
+  display: inline-block;
+  padding-bottom: var(--padding-m);
+  border-bottom: 3px solid var(--accent-color);
+
+  margin-bottom: 3vw;
+}
+
+/* Section */
+#projects-overview {
+  display: flex;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+/* wrapper */
+#projects-wrapper {
+  margin: 0 auto; /* Zentriert den Container */
+}
+
+/* projects */
+#projectsAll {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 80px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  /* background-color: var(--white-color); */
+  border-radius: 10px;
+
+  width: 600px;
+  height: 400px;
+}
+h2 {
+  font-size: clamp(var(--font-size-m), 1.7vw, var(--font-size-xl));
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+
+  margin-top: var(--margin-m);
+}
+
+/* overview */
+.proj-image-box img {
+  width: 100%;
+}
+
+
+
+.article-card {
+  width: 650px;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: var(--font-family);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 300ms;
+
+  cursor: pointer;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.article-card,
+.article-card .title {
+  margin: 0;
+}
+
+
+.article-card .title {
+  font-size: var(--font-size-l);
+  color: #fff;
+}
