@@ -1,22 +1,3 @@
-/* root */
-.side-padding {
-  max-width: var(--screen-xxl); /* Maximale Breite des Containers */
-  padding-left: var(--side-padding); /* Abstand links */
-  padding-right: var(--side-padding); /* Abstand rechts */
-}
-.section-headline {
-  font-size: clamp(var(--font-size-xl), 2.5vw, var(--font-size-xxl));
-  font-weight: 700;
-  color: var(--primary-font-color);
-
-  display: inline-block;
-  padding-bottom: var(--padding-m);
-  border-bottom: 3px solid var(--accent-color);
-
-  margin-bottom: 1vw;
-}
-
-
 #contact-section {
     /* padding: 5vw 0; */
     background-color: var(--primary-bg-color);

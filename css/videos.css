@@ -1,0 +1,13 @@
+/* Section */
+#projects-overview {
+    display: flex;
+    height: 100vh;
+  
+    display: grid;
+    place-items: center;
+  }
+  
+  /* wrapper */
+  #projects-wrapper {
+    margin: 0 auto; /* Zentriert den Container */
+  }
