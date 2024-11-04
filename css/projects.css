@@ -1,6 +1,7 @@
 /* Section */
 #projects-overview {
-  display: flex;
+  /* display: flex; */
+  margin-top: 4vw;
   height: 100vh;
 
   display: grid;
@@ -88,4 +89,60 @@ h2 {
 .article-card .title {
   font-size: var(--font-size-l);
   color: #fff;
+  font-weight: 600;
+}
+
+
+/* Status */
+
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+  /* justify-content: center; */
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 40%; }
+}
+
+#status-this{
+  display: grid;
+  /* place-content: center; */
+  place-items: center;
+  width: 100%;
+  margin: var(--margin-l) 0;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4vw;
+  padding: var(--padding-l) 0;
+}
+
+#status-this h2{
+  margin-bottom: 24px;
+}
+#todo{
+  margin-top: 24px;
+}
+#todo p{
+  font-size: var(--font-size-l);
+  font-weight: 700;
+}
+li{
+  font-size: var(--font-size-l);
 }
