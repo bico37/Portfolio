@@ -1,0 +1,80 @@
+Welche Projekte???
+
+Erste Klasse:
+Sommer Semester Projekt
+März - Juni 2023
+HTML, CSS
+
+===============================================
+
+Zweite Klasse:
+MEDT:
+
+Cars Full Screen
+HTML CSS
+September 2023
+
+Dice Attack
+HTML CSS JS, erstes mal js
+Oktober 2023
+
+TicTacToe
+HTML CSS JS
+November 2023
+
+Formula 1 Driver
+HTML CSS JS
+Dezember 2023
+
+2D Soccer Game
+HTML CSS JS
+Jänner - März 2023
+
+TravelPilot
+HTML CSS JS GSAP API,
+März - Juni 2023
+
+-------------------------
+SYTSW
+
+Wheather API
+HTML, CSS JS API
+November 2023
+
+Food API
+HTML, CSS JS API
+November 2023
+
+Valorant API
+HTML CSS JS API
+November 2023
+
+Austrian Skier
+HTML CSS JS TS NodeJS ExpressJS
+Jänner 2024
+
+TODO List
+HTML CSS JS TS NodeJS ExpressJS
+Februar 2024
+
+DrinkwaterAPP - Smartphone
+HTML CSS JS TS NodeJS ExpressJS
+März 2024
+
+Snowman (ue37 arc rotate)
+HTML CSS JS TS BabylonJS
+April 2024
+
+Babylon 3D Game
+HTML CSS JS TS BabylonJS
+Mai 2024
+
+==========================================
+
+Screen Design
+HTML CSS JS
+September 2024
+
+Adventskalender
+HTML CSS JS PHP
+November 2025

@@ -1,13 +1,61 @@
 /* Section */
 #projects-overview {
-    display: flex;
+  margin: 5vw 0;
+  /* display: flex;
     height: 100vh;
   
     display: grid;
-    place-items: center;
-  }
-  
-  /* wrapper */
-  #projects-wrapper {
-    margin: 0 auto; /* Zentriert den Container */
-  }
+    place-items: center; */
+}
+
+/* wrapper */
+#projects-wrapper {
+  margin: 0 auto;
+  /* Zentriert den Container */
+}
+
+/* Grid */
+#content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* grid-template-columns: 30% 30% 30%; */
+  gap: 2rem;
+}
+
+.project {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.242);
+  border-radius: 10px;
+
+  /* background-color: var(--secondary-color); */
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.project h2 {
+  transition: all 0.3s;
+}
+.project:hover h2 {
+  color: var(--accent-color);
+}
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-text {
+  padding: var(--padding-xs) var(--padding-s) var(--padding-s) var(--padding-s);
+}
+
+.project-text p{
+  display: inline-block;
+  padding: var(--padding-xxs) var(--padding-s);
+  margin: var(--margin-xxs) 0;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+}

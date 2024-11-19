@@ -17,18 +17,9 @@
 #projectsAll {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 80px;
+  gap: 2vw;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  /* background-color: var(--white-color); */
-  border-radius: 10px;
-
-  width: 600px;
-  height: 400px;
-}
 h2 {
   font-size: clamp(var(--font-size-m), 1.7vw, var(--font-size-xl));
   font-weight: 600;
@@ -38,16 +29,9 @@ h2 {
   margin-top: var(--margin-m);
 }
 
-/* overview */
-.proj-image-box img {
-  width: 100%;
-}
-
-
-
 .article-card {
-  width: 650px;
-  height: 420px;
+  width: 600px;
+  height: 400px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -85,14 +69,17 @@ h2 {
   margin: 0;
 }
 
-
 .article-card .title {
   font-size: var(--font-size-l);
   color: #fff;
   font-weight: 600;
+
+  transition: all 300ms;
 }
 
-
+.article-card:hover .title {
+  color: var(--accent-color);
+}
 /* Status */
 
 .progress {
@@ -135,12 +122,14 @@ h2 {
 
 #status-this h2{
   margin-bottom: 24px;
+  text-decoration: underline;
 }
 #todo{
   margin-top: 24px;
 }
 #todo p{
   font-size: var(--font-size-l);
+  text-decoration: underline;
   font-weight: 700;
 }
 li{
