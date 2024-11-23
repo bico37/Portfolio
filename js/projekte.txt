@@ -28,11 +28,11 @@ Dezember 2023
 
 2D Soccer Game
 HTML CSS JS
-Jänner - März 2023
+Jänner - März 2024
 
 TravelPilot
 HTML CSS JS GSAP API,
-März - Juni 2023
+März - Juni 2024 
 
 -------------------------
 SYTSW

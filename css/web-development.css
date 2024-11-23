@@ -52,10 +52,15 @@
   padding: var(--padding-xs) var(--padding-s) var(--padding-s) var(--padding-s);
 }
 
-.project-text p{
+.technologies{
   display: inline-block;
   padding: var(--padding-xxs) var(--padding-s);
-  margin: var(--margin-xxs) 0;
+  /* margin: var(--margin-xxs) 0; */
   border-radius: 20px;
   background-color: var(--primary-color);
+}
+
+.project-text p{
+  font-weight: 500;
+  margin: var(--margin-xxs) 0;
 }
