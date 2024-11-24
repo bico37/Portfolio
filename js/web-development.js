@@ -159,8 +159,8 @@ let soccer2DGame = {
 
 let travelPilot = {
   ranking: 0,
-  cover: "travelPilot.png",
-  video: "travelPilot.mp4",
+  cover: "travelpilot.png",
+  video: "travelpilot.mp4",
   link: " https://bico37.github.io/Travelpilot/",
   name: "Travel Pilot",
   description: "A project showcasing a travel agency website.",
