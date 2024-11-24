@@ -94,7 +94,7 @@ let austrianSkier = {
   ranking: 0,
   cover: "austrianSkier.png",
   video: "austrianSkier.mp4",
-  link: "https://github.com/bico37/Austrian-Skierg",
+  link: "https://github.com/bico37/Austrian-Skier",
   name: "Austrian Skier",
   description:
     "A project developed with TypeScript, NodeJS, and ExpressJS featuring Austrian skiers.",
