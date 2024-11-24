@@ -3,7 +3,7 @@ let formula1 = {
   ranking: 0,
   cover: "formula1.png",
   video: "formula1.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Formula1/",
   name: "Formula 1",
   description: "A project displaying a Formula 1 webpage layout.",
   date: "March - June 2023",
@@ -15,7 +15,7 @@ let carsFullScreen = {
   ranking: 0,
   cover: "carsFullScreen.png",
   video: "carsFullScreen.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Cars-Full-Screen/",
   name: "Cars Full Screen",
   description: "A project displaying a full-screen layout with HTML and CSS.",
   date: "September 2023",
@@ -26,7 +26,7 @@ let diceAttack = {
   ranking: 0,
   cover: "diceAttack.png",
   video: "diceAttack.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Dice-Attack/",
   name: "Dice Attack",
   description:
     "A project where JS was used for the first time to create an interactive dice game.",
@@ -38,7 +38,7 @@ let ticTacToe = {
   ranking: 0,
   cover: "ticTacToe.png",
   video: "ticTacToe.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/TicTacToe/",
   name: "TicTacToe",
   description: "A classic Tic Tac Toe game built with JavaScript.",
   date: "November 2023",
@@ -49,7 +49,7 @@ let formula1Driver = {
   ranking: 0,
   cover: "formula1Driver.png",
   video: "formula1Driver.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Formula1-Driver/",
   name: "Formula 1 Driver",
   description: "An interactive webpage focused on Formula 1 drivers.",
   date: "December 2023",
@@ -60,7 +60,7 @@ let weatherAPI = {
   ranking: 0,
   cover: "weatherAPI.png",
   video: "weatherAPI.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Weather-API/",
   name: "Weather API",
   description: "A project using APIs to fetch and display weather data.",
   date: "November 2023",
@@ -71,7 +71,7 @@ let foodAPI = {
   ranking: 0,
   cover: "foodAPI.png",
   video: "foodAPI.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Food-API/",
   name: "Food API",
   description: "An application that uses APIs to display food-related data.",
   date: "November 2023",
@@ -82,7 +82,7 @@ let valorantAPI = {
   ranking: 0,
   cover: "valorantAPI.png",
   video: "valorantAPI.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Valorant-API/",
   name: "Valorant API",
   description: "An API-based project showcasing data about Valorant.",
   date: "November 2023",
@@ -94,7 +94,7 @@ let austrianSkier = {
   ranking: 0,
   cover: "austrianSkier.png",
   video: "austrianSkier.mp4",
-  link: "https://placeholder/",
+  link: "https://github.com/bico37/Austrian-Skierg",
   name: "Austrian Skier",
   description:
     "A project developed with TypeScript, NodeJS, and ExpressJS featuring Austrian skiers.",
@@ -117,7 +117,7 @@ let drinkWaterApp = {
   ranking: 1,
   cover: "aquaMate.jpg",
   video: "aquaMate.mp4",
-  link: "https://placeholder/",
+  link: "https://github.com/bico37/Aqua-Mate",
   name: "Aqua Mate",
   description: "A smartphone app to track water consumption.",
   date: "March 2024",
@@ -128,7 +128,7 @@ let snowman = {
   ranking: 1,
   cover: "snowman.png",
   video: "snowman.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/Babylon.js-Snowman/",
   name: "Babylon Snowman",
   description: "A 3D snowman created using BabylonJS.",
   date: "April 2024",
@@ -150,7 +150,7 @@ let soccer2DGame = {
   ranking: 0,
   cover: "soccer2DGame.png",
   video: "soccer2DGame.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/2D-Soccer-Game/",
   name: "Soccer 2D Game",
   description: "A 2D soccer game.",
   date: "January - March 2024",
@@ -161,7 +161,7 @@ let travelPilot = {
   ranking: 0,
   cover: "travelPilot.png",
   video: "travelPilot.mp4",
-  link: "https://placeholder/",
+  link: " https://bico37.github.io/Travelpilot/",
   name: "Travel Pilot",
   description: "A project showcasing a travel agency website.",
   date: "March - June 2024",
@@ -173,7 +173,7 @@ let tshirtdesigner = {
   ranking: 1,
   cover: "customClothery.png",
   video: "customClothery.mp4",
-  link: "https://placeholder/",
+  link: "https://bico37.github.io/CustomClothery/",
   name: "CustomClothery",
   description:
     "A project allowing users to design custom t-shirts and hoodies.",
@@ -185,7 +185,7 @@ let adventCalendar = {
   ranking: 1,
   cover: "adventCalendar.png",
   video: "adventCalendar.mp4",
-  link: "https://placeholder/",
+  link: "https://github.com/bico37/Fifa-AdventCalendar",
   name: "Advent Calendar",
   description: "An advent calendar featuring FIFA players.",
   date: "November 2024",
@@ -196,7 +196,7 @@ let spotlas = {
   ranking: 1,
   cover: "spotlas.png",
   video: "spotlas.mp4",
-  link: "https://placeholder/",
+  link: "https://github.com/bico37",
   name: "Spotlas",
   description:
     "A platform showcasing hidden gems and unique places, designed to foster a community for sharing discoveries. Developed by a 4-person team with me as the project leader and backend developer .",
@@ -266,7 +266,7 @@ function printProjectOverview() {
   for (let i = 0; i < projects.length; i++) {
     let project = projects[i];
     contentString += `
-        <div class="project">
+        <div class="project" onclick="openLink('${project.link}')">
             <div class="project-img">
                 <img src="../assets/img/projects/webDev/cover/${project.cover}" alt="" />
             </div>
@@ -280,6 +280,10 @@ function printProjectOverview() {
   }
 
   document.getElementById("content-wrapper").innerHTML = contentString;
+}
+
+function openLink(url) {
+  window.open(url, "_blank");
 }
 
 printProjectOverview();
