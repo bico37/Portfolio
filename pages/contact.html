@@ -1,88 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erik Bergmair - Contact Me</title>
+    <meta name="description" content="Erik Bergmair - Kontaktieren Sie mich für Projekte, Anfragen oder einfach nur für einen Kaffee. Ich freue mich auf Ihre Nachricht." />
+    <meta name="keywords" content="Erik Bergmair, Kontakt, Projekte, E-Mail, Linz, Österreich, Buy Me A Coffee, Social Media, Discord, GitHub, Pinterest" />
+    <meta name="author" content="Erik Bergmair" />
+    <meta property="og:title" content="Erik Bergmair - Kontaktieren Sie mich" />
+    <meta property="og:description" content="Kontaktieren Sie Erik Bergmair für Fragen, Projekte oder einfach nur um ihn zu unterstützen. Hier finden Sie alle nötigen Informationen." />
+    <meta property="og:image" content="../assets/img/contact/bmc_qr.png" />
+    <meta property="og:url" content="https://www.erikbergmair.com/contact" />
+    <title>Erik Bergmair - Kontaktieren Sie mich</title>
 
-    <!-- favicon icon -->
+    <!-- Favicon -->
     <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
 
-
-    <!-- fonts -->
+    <!-- Schriftarten -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-    <!-- multiple js -->
-    <link href="assets/css/multiple.css" rel="stylesheet">
-    <script src="assets/js/multiple.min.js"></script>
-
-    <!-- css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/nav.css" />
     <link rel="stylesheet" href="../css/contact.css" />
 
-    <!-- js -->
+    <!-- JavaScript -->
+    <script src="assets/js/multiple.min.js"></script>
 
 </head>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Verhindert das direkte Absenden
-
-        const name = document.getElementById('nameInput').value;
-        const form = event.target;
-
-        // URL mit dem Namen des Benutzers als Parameter anpassen
-        form.action = `https://formspree.io/f/xeoqagjw?name=${encodeURIComponent(name)}`;
-
-        form.submit(); // Formular absenden
-    });
-</script>
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="erikbergi" data-description="Support me on Buy me a coffee!"
-    data-message="Thank you so much for the coffee! ☕️Your support means the world and keeps me inspired"
-    data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 <body>
     <header>
-        <div id="header-logo"><img src="../assets/img/logo.png" alt="" /></div>
+        <div id="header-logo"><img src="../assets/img/logo.png" alt="Erik Bergmair Logo" /></div>
         <nav>
             <ul>
-                <li><a class="nav-links" href="../index.html">Home</a></li>
-                <!-- <li><a class="nav-links" href="#">About Me</a></li> -->
-                <li><a class="nav-links" href="../pages/projects.html">Projects</a></li>
-                <li><a class="nav-links" href="./contact.html">Contact</a></li>
+                <li><a class="nav-links" href="../index.html">Startseite</a></li>
+                <li><a class="nav-links" href="../pages/projects.html">Projekte</a></li>
+                <li><a class="nav-links" href="./contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="contact-section">
         <div id="contact-wrapper" class="side-padding">
-
             <div id="contact-info">
-                <h1 class="section-headline">Contact Me</h1>
-                <h2>Contact Information:</h2>
+                <h1 class="section-headline">Kontaktieren Sie mich</h1>
+                <h2>Kontaktinformationen:</h2>
                 <p>Email: bergmairerik@gmail.com</p>
-                <!-- <p>Phone: +43 6602512933</p> -->
-                <p>Based: Linz, Austria</p>
+                <p>Standort: Linz, Österreich</p>
 
                 <hr>
-                <h2>Buy me a coffee:</h2>
-                <img src="../assets/img/contact/bmc_qr.png" alt="" style="width: 25%; margin-bottom: 1vw;">
+                <h2>Unterstützen Sie mich mit einem Kaffee:</h2>
+                <img src="../assets/img/contact/bmc_qr.png" alt="Buy Me A Coffee QR Code" style="width: 25%; margin-bottom: 1vw;">
                 <hr>
-                <h2>My Socials:</h2>
+                <h2>Meine sozialen Netzwerke:</h2>
                 <div id="socials">
-                    <a target="_blank" href="https://www.instagram.com/bergi.rik/"><img
-                            src="../assets/img/contact/instagram.png" alt="instagram"></a>
-                    <a target="_blank" href=""><img src="../assets/img/contact/discord.png" alt="discord"
-                            title="bico37"></a>
-                    <a target="_blank" href="https://at.pinterest.com/bergirik/"><img
-                            src="../assets/img/contact/pinterest.png" alt="pinterest"></a>
-                    <a target="_blank" href="https://github.com/bico37"><img src="../assets/img/contact/github.png"
-                            alt="github"></a>
+                    <a target="_blank" href="https://www.instagram.com/bergi.rik/"><img src="../assets/img/contact/instagram.png" alt="Instagram"></a>
+                    <a target="_blank" href=""><img src="../assets/img/contact/discord.png" alt="Discord" title="bico37"></a>
+                    <a target="_blank" href="https://at.pinterest.com/bergirik/"><img src="../assets/img/contact/pinterest.png" alt="Pinterest"></a>
+                    <a target="_blank" href="https://github.com/bico37"><img src="../assets/img/contact/github.png" alt="GitHub"></a>
                 </div>
             </div>
 
@@ -109,22 +87,36 @@
                             <div class="styled-input wide">
                                 <textarea name="message" required></textarea>
                                 <label>
-                                    <p>Message</p>
+                                    <p>Nachricht</p>
                                 </label>
                             </div>
                         </div>
                         <div class="col-xs-12">
                             <button class="btn-lrg submit-btn" type="submit">
-                                <p>Send Message</p>
+                                <p>Nachricht senden</p>
                             </button>
                         </div>
                     </div>
                 </form>
             </div>
-
         </div>
     </section>
 
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Verhindert das direkte Absenden
+
+            const name = document.getElementById('nameInput').value;
+            const form = event.target;
+
+            // URL mit dem Namen des Benutzers als Parameter anpassen
+            form.action = `https://formspree.io/f/xeoqagjw?name=${encodeURIComponent(name)}`;
+
+            form.submit(); // Formular absenden
+        });
+    </script>
+
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="erikbergi" data-description="Unterstütze mich bei Buy me a coffee!" data-message="Vielen Dank für deinen Kaffee! ☕️ Deine Unterstützung bedeutet mir sehr viel und hält mich inspiriert." data-color="#FF813F" data-position="Rechts" data-x_margin="18" data-y_margin="18"></script>
 
 </body>
 
