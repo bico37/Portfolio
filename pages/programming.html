@@ -44,14 +44,30 @@
     <link rel="icon" sizes="512x512" href="../assets/img/icon/touch-icon-512x512.png">
 
 </head>
-
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('nav ul');
+        navLinks.classList.toggle('show');
+    }
+</script>
 <body>
     <header>
-        <div id="header-logo"><img src="../assets/img/logo.png" alt="Erik Bergmair Logo" /></div>
+        <div id="header-logo">
+            <img src="../assets/img/logo.png" alt="Erik Bergmair Logo" />
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
         <nav>
             <ul>
                 <li><a class="nav-links" href="../index.html">Startseite</a></li>
-                <li><a class="nav-links" href="../pages/projects.html">Projekte</a></li>
+                <!-- <li><a class="nav-links" href="#">Über mich</a></li> -->
+                <li><a class="nav-links" href="./projects.html">Projekte</a></li>
                 <li><a class="nav-links" href="./contact.html">Kontakt</a></li>
             </ul>
         </nav>
@@ -62,12 +78,6 @@
             <h1 class="section-headline">Programmierung</h1>
         </div>
     </section>
-
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-        data-id="erikbergi" data-description="Unterstütze mich bei Buy me a coffee!"
-        data-message="Vielen Dank für deinen Kaffee! ☕️ Deine Unterstützung bedeutet mir sehr viel und hält mich inspiriert."
-        data-color="#FF813F" data-position="Rechts" data-x_margin="18" data-y_margin="18"></script>
-
 </body>
 
 </html>

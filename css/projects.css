@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+}
+
 /* Section */
 #projects-overview {
   /* display: flex; */
@@ -11,13 +15,17 @@
 /* wrapper */
 #projects-wrapper {
   margin: 0 auto; /* Zentriert den Container */
+  margin-top: var(--margin-m);
+
 }
 
 /* projects */
 #projectsAll {
   display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 2vw;
+  /* grid-template-columns: 50% 50%; */
+  /* gap: 2vw; */
+  place-content: center;
+  margin: var(--margin-l);
 }
 
 h2 {
@@ -26,12 +34,11 @@ h2 {
   color: var(--primary-color);
   text-align: center;
 
-  margin-top: var(--margin-m);
 }
 
 .article-card {
-  width: 600px;
-  height: 400px;
+  max-width: 600px;
+  width: 100%;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -80,8 +87,9 @@ h2 {
 .article-card:hover .title {
   color: var(--accent-color);
 }
-/* Status */
 
+
+/* Status */
 .progress {
   background: rgba(255,255,255,0.1);
   justify-content: flex-start;

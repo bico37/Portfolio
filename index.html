@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erik Bergmair - Webentwickler, Softwareentwickler und Fotograf</title>
+  <title>Erik Bergmair - Webentwickler, Softwareentwickler und Fotograf Linz</title>
 
   <!-- favicon icon -->
   <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
@@ -63,10 +63,26 @@
     }
     </script>
 </head>
+<script>
+  function toggleMenu() {
+  const navLinks = document.querySelector('nav ul');
+  navLinks.classList.toggle('show');
+}
+</script>
 
 <body>
   <header>
-    <div id="header-logo"><img src="./assets/img/logo.png" alt="Erik Bergmair Logo" /></div>
+    <div id="header-logo">
+      <img src="./assets/img/logo.png" alt="Erik Bergmair Logo" />
+    </div>
+  
+    <!-- Hamburger Menu Icon -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  
     <nav>
       <ul>
         <li><a class="nav-links" href="./index.html">Startseite</a></li>
@@ -76,6 +92,7 @@
       </ul>
     </nav>
   </header>
+  
 
   <section id="hero-section">
     <div id="hero-text">
@@ -109,8 +126,8 @@
         <h1 class="section-headline">Über mich</h1>
         <p id="infos-text">Hallo, ich bin <span class="textBold">Erik Bergmair</span>, ein leidenschaftlicher Entwickler
           und
-          Fotograf. Diese Seite gibt dir einen Einblick in die Projekte und Fähigkeiten, die ich im Laufe der Jahre
-          entwickelt habe.
+          Fotograf. <br> Diese Seite gibt dir einen Einblick in die Projekte und Fähigkeiten, die ich im Laufe der Jahre
+          entwickelt habe. <br>
           Ob Webdesign, Programmierung oder Fotografie – hier findest du alles, was ich mit Leidenschaft erschaffe. Viel
           Spaß beim Entdecken und Inspirieren lassen!</p>
 
@@ -297,7 +314,24 @@
   </section>
 
   <footer>
-    <p>© 2024 Erik Bergmair - Alle Rechte vorbehalten</p>
+    <div id="footer-container">
+      <div id="footer-left">
+        <p>© 2024 Erik Bergmair | Alle Rechte vorbehalten</p>
+      </div>
+      <div id="footer-center">
+        <ul>
+          <li><a href="./index.html">Start</a></li>
+          <li><a href="./pages/projects.html">Projekte</a></li>
+          <li><a href="./pages/contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div id="footer-right">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/deinprofil" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/bico37" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
 
