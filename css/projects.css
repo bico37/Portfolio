@@ -1,5 +1,5 @@
 body{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Section */
@@ -15,7 +15,7 @@ body{
 /* wrapper */
 #projects-wrapper {
   margin: 0 auto; /* Zentriert den Container */
-  margin-top: var(--margin-m);
+  /* margin-top: var(--margin-m); */
 
 }
 
@@ -37,7 +37,8 @@ h2 {
 }
 
 .article-card {
-  max-width: 600px;
+  min-width: 400px;
+  max-width: 500px;
   width: 100%;
   border-radius: 12px;
   overflow: hidden;

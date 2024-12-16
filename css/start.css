@@ -275,6 +275,8 @@
 
 .whatIDo-box img {
   width: 5vw !important;
+  min-width: 50px;
+  min-height: 50px;
   margin: var(--margin-l) 0;
 }
 
@@ -329,6 +331,8 @@
 
 .keySkill img {
   width: 3vw;
+  min-width: 50px;
+  min-height: 50px;
   margin: var(--margin-l) 0;
 }
 
@@ -352,6 +356,8 @@
 }
 
 .skill {
+  position: relative; /* Wichtig für die Positionierung der Tooltip-Box */
+
   display: grid;
   place-items: center;
   width: 3vw;
@@ -375,6 +381,28 @@
 
 .skill:hover {
   transform: translateY(-5px);
+}
+
+.tooltip {
+
+  position: absolute;
+  bottom: 120%; /* Position oberhalb des Skills */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5em 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.8em;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.skill:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* learning */

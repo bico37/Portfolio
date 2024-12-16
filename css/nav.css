@@ -95,6 +95,12 @@ header .hamburger-menu {
   transform: translateY(-50%);
 }
 
+nav ul.show .nav-links {
+  font-size: 1.4rem; /* Größere Schriftgröße */
+  margin-top: 20px; /* Weiter oben positionieren */
+  transition: all 0.3s ease-in-out; /* Weiche Übergänge */
+}
+
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -112,6 +118,7 @@ header .hamburger-menu {
 
   nav ul.show {
     display: flex; /* Anzeigen, wenn die Klasse 'show' hinzugefügt wird */
+    gap: 2vw;
   }
 
   /* Hamburger Menü wird auf kleineren Geräten angezeigt */
