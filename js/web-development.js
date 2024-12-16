@@ -192,16 +192,27 @@ let adventCalendar = {
   tech: "HTML, CSS, JS, PHP",
 };
 
-let spotlas = {
+// let spotlas = {
+//   ranking: 1,
+//   cover: "spotlas.png",
+//   video: "spotlas.mp4",
+//   link: "https://github.com/bico37",
+//   name: "Spotlas",
+//   description:
+//     "A platform showcasing hidden gems and unique places, designed to foster a community for sharing discoveries. Developed by a 4-person team with me as the project leader and backend developer .",
+//   date: "November 2024 - June 2025",
+//   tech: "HTML, CSS, Bootsrap, JS, PHP, MariaDB ",
+// };
+
+let portfolio = {
   ranking: 1,
-  cover: "spotlas.png",
-  video: "spotlas.mp4",
-  link: "https://github.com/bico37",
-  name: "Spotlas",
-  description:
-    "A platform showcasing hidden gems and unique places, designed to foster a community for sharing discoveries. Developed by a 4-person team with me as the project leader and backend developer .",
-  date: "November 2024 - June 2025",
-  tech: "HTML, CSS, Bootsrap, JS, PHP, MariaDB ",
+  cover: "adventCalendar.png",
+  video: "adventCalendar.mp4",
+  link: "https://github.com/bico37/Portfolio",
+  name: "Portfolio",
+  description: "A Portfolio showcasing me and my projects.",
+  date: "August 2024 - November 2024",
+  tech: "HTML, CSS, JS",
 };
 
 let projects = [
@@ -220,9 +231,10 @@ let projects = [
   // babylon3DGame,
   tshirtdesigner,
   adventCalendar,
-  spotlas,
+  // spotlas,
   soccer2DGame,
   travelPilot,
+  // portfolio
 ];
 
 // sort projects by date
@@ -263,12 +275,27 @@ console.log(projects);
 function printProjectOverview() {
   let contentString = "";
 
+  // Portfolio to always be the first project
+  contentString += `
+          <div class="project" onclick="openLink('${portfolio.link}')">
+            <div class="project-img">
+                <img src="../assets/img/logo.png" alt="Portfolio" />
+            </div>
+            <div class="project-text">
+                <h2>${portfolio.name}</h2>
+                <p>${portfolio.date}</p>
+                <p class="technologies">${portfolio.tech}</p>
+            </div>
+        </div>
+        `;
+
+
   for (let i = 0; i < projects.length; i++) {
     let project = projects[i];
     contentString += `
         <div class="project" onclick="openLink('${project.link}')">
             <div class="project-img">
-                <img src="../assets/img/projects/webDev/cover/${project.cover}" alt="" />
+                <img src="../assets/img/projects/webDev/cover/${project.cover}" alt="${project.name}" />
             </div>
             <div class="project-text">
                 <h2>${project.name}</h2>

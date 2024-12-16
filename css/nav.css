@@ -109,7 +109,7 @@ nav ul.show .nav-links {
     align-items: center;  /* Horizontale Zentrierung */
     justify-content: center;  /* Vertikale Zentrierung */
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;

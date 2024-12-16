@@ -52,22 +52,3 @@ window.onload = function () {
     }
   }
 };
-
-
-
-// Multiple
-// document.addEventListener("DOMContentLoaded", function () {
-//   new Multiple({
-//     selector: '.keySkill',
-//     background: true,
-//     threshold: 150
-//   });
-// });
-
-
-
-
-// method for random number
-// function randomNumber(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1) + min);
-// }

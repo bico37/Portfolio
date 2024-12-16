@@ -48,6 +48,12 @@
         const navLinks = document.querySelector('nav ul');
         navLinks.classList.toggle('show');
     }
+    // link to the logo
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('header-logo').addEventListener('click', function () {
+            window.location.href = '../index.html';
+        });
+    });
 </script>
 
 <body>
