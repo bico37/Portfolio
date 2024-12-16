@@ -211,7 +211,7 @@ let portfolio = {
   link: "https://github.com/bico37/Portfolio",
   name: "Portfolio",
   description: "A Portfolio showcasing me and my projects.",
-  date: "August 2024 - November 2024",
+  date: "August - December 2024",
   tech: "HTML, CSS, JS",
 };
 
