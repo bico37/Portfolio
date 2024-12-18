@@ -1,0 +1,22 @@
+# Robots.txt
+
+# Erlaubt allen Suchmaschinen das Crawlen der Website
+User-agent: *
+Disallow:
+
+Sitemap: https://erikbergmair.com/sitemap.xml
+
+# Blockiere bekannte Bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+# Ende
