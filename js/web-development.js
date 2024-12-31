@@ -8,6 +8,7 @@ let formula1 = {
   description: "A project displaying a Formula 1 webpage layout.",
   date: "March - June 2023",
   tech: "HTML, CSS",
+  responsive: true
 };
 
 // 2 klasse
@@ -20,6 +21,7 @@ let carsFullScreen = {
   description: "A project displaying a full-screen layout with HTML and CSS.",
   date: "September 2023",
   tech: "HTML, CSS",
+  responsive: false
 };
 
 let diceAttack = {
@@ -32,6 +34,7 @@ let diceAttack = {
     "A project where JS was used for the first time to create an interactive dice game.",
   date: "October 2023",
   tech: "HTML, CSS, JS",
+  responsive: false
 };
 
 let ticTacToe = {
@@ -43,6 +46,7 @@ let ticTacToe = {
   description: "A classic Tic Tac Toe game built with JavaScript.",
   date: "November 2023",
   tech: "HTML, CSS, JS",
+  responsive: false
 };
 
 let formula1Driver = {
@@ -54,6 +58,7 @@ let formula1Driver = {
   description: "An interactive webpage focused on Formula 1 drivers.",
   date: "December 2023",
   tech: "HTML, CSS, JS",
+  responsive: false
 };
 
 let weatherAPI = {
@@ -65,6 +70,7 @@ let weatherAPI = {
   description: "A project using APIs to fetch and display weather data.",
   date: "November 2023",
   tech: "HTML, CSS, JS, API",
+  responsive: false
 };
 
 let foodAPI = {
@@ -76,6 +82,7 @@ let foodAPI = {
   description: "An application that uses APIs to display food-related data.",
   date: "November 2023",
   tech: "HTML, CSS, JS, API",
+  responsive: false
 };
 
 let valorantAPI = {
@@ -87,6 +94,7 @@ let valorantAPI = {
   description: "An API-based project showcasing data about Valorant.",
   date: "November 2023",
   tech: "HTML, CSS, JS, API",
+  responsive: false
 };
 
 // 2024
@@ -100,6 +108,7 @@ let austrianSkier = {
     "A project developed with TypeScript, NodeJS, and ExpressJS featuring Austrian skiers.",
   date: "January 2024",
   tech: "HTML, CSS, JS, TS, NodeJS, ExpressJS",
+  responsive: false
 };
 
 let todoList = {
@@ -111,6 +120,7 @@ let todoList = {
   description: "A to-do list application using TypeScript and NodeJS.",
   date: "February 2024",
   tech: "HTML, CSS, JS, TS, NodeJS, ExpressJS",
+  responsive: false
 };
 
 let drinkWaterApp = {
@@ -122,6 +132,7 @@ let drinkWaterApp = {
   description: "A smartphone app to track water consumption.",
   date: "March 2024",
   tech: "HTML, CSS, JS, TS, NodeJS, ExpressJS",
+  responsive: true
 };
 
 let snowman = {
@@ -133,6 +144,7 @@ let snowman = {
   description: "A 3D snowman created using BabylonJS.",
   date: "April 2024",
   tech: "HTML, CSS, JS, TS, BabylonJS",
+  responsive: false
 };
 
 let babylon3DGame = {
@@ -144,6 +156,7 @@ let babylon3DGame = {
   description: "A 3D game developed with BabylonJS.",
   date: "May 2024",
   tech: "HTML, CSS, JS, TS, BabylonJS",
+  responsive: false
 };
 
 let soccer2DGame = {
@@ -155,6 +168,7 @@ let soccer2DGame = {
   description: "A 2D soccer game.",
   date: "January - March 2024",
   tech: "HTML, CSS, JS",
+  responsive: false
 };
 
 let travelPilot = {
@@ -166,6 +180,7 @@ let travelPilot = {
   description: "A project showcasing a travel agency website.",
   date: "March - June 2024",
   tech: "HTML, CSS, JS",
+  responsive: false
 };
 
 // 3 klasse
@@ -179,6 +194,7 @@ let tshirtdesigner = {
     "A project allowing users to design custom t-shirts and hoodies.",
   date: "September 2024",
   tech: "HTML, CSS, JS",
+  responsive: false
 };
 
 let adventCalendar = {
@@ -190,6 +206,7 @@ let adventCalendar = {
   description: "An advent calendar featuring FIFA players.",
   date: "November 2024",
   tech: "HTML, CSS, JS, PHP",
+  responsive: false
 };
 
 // let spotlas = {
@@ -213,6 +230,7 @@ let portfolio = {
   description: "A Portfolio showcasing me and my projects.",
   date: "August - December 2024",
   tech: "HTML, CSS, JS",
+  responsive: true
 };
 
 let projects = [
@@ -284,27 +302,32 @@ function printProjectOverview() {
             <div class="project-text">
                 <h2>${portfolio.name}</h2>
                 <p>${portfolio.date}</p>
+                <p class="responsiveness">Responsive</p>
                 <p class="technologies">${portfolio.tech}</p>
+
             </div>
         </div>
         `;
 
 
-  for (let i = 0; i < projects.length; i++) {
-    let project = projects[i];
-    contentString += `
-        <div class="project" onclick="openLink('${project.link}')">
-            <div class="project-img">
-                <img src="../assets/img/projects/webDev/cover/${project.cover}" alt="${project.name}" />
-            </div>
-            <div class="project-text">
-                <h2>${project.name}</h2>
-                <p>${project.date}</p>
-                <p class="technologies">${project.tech}</p>
-            </div>
-        </div>
-        `;
-  }
+        for (let i = 0; i < projects.length; i++) {
+          let project = projects[i];
+          let responsive = project.responsive;
+          contentString += `
+              <div class="project" onclick="openLink('${project.link}')">
+                  <div class="project-img">
+                      <img src="../assets/img/projects/webDev/cover/${project.cover}" alt="${project.name}" />
+                  </div>
+                  <div class="project-text">
+                      <h2>${project.name}</h2>
+                      <p>${project.date}</p>
+                      <p class="responsiveness">${responsive ? "Responsive" : "Not responsive"}</p>
+                      <p class="technologies">${project.tech}</p>
+                  </div>
+              </div>
+              `;
+      }
+      
 
   document.getElementById("content-wrapper").innerHTML = contentString;
 }

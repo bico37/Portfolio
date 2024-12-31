@@ -47,6 +47,9 @@
   padding: var(--padding-xs) var(--padding-s) var(--padding-s) var(--padding-s);
 }
 
+
+
+
 .technologies{
   display: inline-block;
   padding: var(--padding-xxs) var(--padding-s);
@@ -56,8 +59,12 @@
 }
 
 .project-text p{
-  font-weight: 500;
+  font-weight: 600;
   margin: var(--margin-xxs) 0;
+}
+
+.responsiveness{
+  font-weight: 400 !important;
 }
 
 /* responsive */
