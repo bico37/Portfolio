@@ -1,7 +1,19 @@
+body{
+  overflow-x: hidden;
+}
+
 /* hero section */
 #hero-section {
   display: flex;
   height: 100vh;
+}
+#particle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Damit es hinter den Inhalten liegt */
 }
 
 /* left side */
@@ -15,6 +27,7 @@
 #hero-text-content {
   margin-left: 6vw;
 }
+
 
 /* text */
 #hero-text-content p:nth-of-type(1) {
@@ -55,32 +68,32 @@
   border-right: 0.08em solid #666;
 }
 
-/* buttons */
+
+/* Buttons */
 #hero-btns {
   display: flex;
   flex-wrap: wrap;
-  /* gap: var(--margin-xxl); */
   column-gap: var(--margin-xxl);
   row-gap: var(--margin-xs);
   margin-top: 10vh;
   max-width: 90%;
+  z-index: 100;
+  position: relative; /* Damit z-index funktioniert */
 }
 
 .btn-basic {
   text-decoration: none;
   border-radius: 8px;
   padding: var(--padding-l);
-
   font-size: var(--font-size-m);
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
-
   transition: all 0.3s ease;
-
   width: clamp(150px, 10vw, 200px);
 }
 
+/* Button Hover- und Active-Effekte */
 #hero-btns a:active {
   transform: translateY(2px);
   scale: 0.98;
@@ -104,6 +117,7 @@
   background-color: var(--white-color);
   color: var(--black-color);
 }
+
 
 /* right side */
 #hero-img {
