@@ -19,7 +19,7 @@ header {
 }
 
 header img {
-  width: clamp(60px, 10vw, 100px);
+  width: clamp(150px, 12vw, 180px);
 }
 
 nav ul {
@@ -124,6 +124,10 @@ nav ul.show .nav-links {
   /* Hamburger Menü wird auf kleineren Geräten angezeigt */
   .hamburger-menu {
     display: flex;
+  }
+
+  header img {
+    margin-bottom: 20px;
   }
 }
 
