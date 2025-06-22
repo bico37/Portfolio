@@ -244,7 +244,7 @@ let GeoAI = {
   name: "GeoAI - Chrome Extension for Geoguessr",
   description:
     "A Chrome extension that enhances the Geoguessr experience by providing AI-generated hints and location data.",
-  date: "April 2025 - cuttrently in development",
+  date: "April 2025 - currently in development",
   tech: "HTML, CSS, JS, NodeJS, OpenAI API",
   responsive: false
 };
