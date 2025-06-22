@@ -238,7 +238,7 @@ let habiTrack = {
 
 let GeoAI = {
   ranking: 1,
-  cover: "GeoAI.png",
+  cover: "geoAI.png",
   video: "GeoAI.mp4",
   link: "https://github.com/bico37/geoguessr-ai-lerning",
   name: "GeoAI - Chrome Extension for Geoguessr",
