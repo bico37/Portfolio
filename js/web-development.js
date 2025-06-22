@@ -209,21 +209,50 @@ let adventCalendar = {
   responsive: false
 };
 
-// let spotlas = {
-//   ranking: 1,
-//   cover: "spotlas.png",
-//   video: "spotlas.mp4",
-//   link: "https://github.com/bico37",
-//   name: "Spotlas",
-//   description:
-//     "A platform showcasing hidden gems and unique places, designed to foster a community for sharing discoveries. Developed by a 4-person team with me as the project leader and backend developer .",
-//   date: "November 2024 - June 2025",
-//   tech: "HTML, CSS, Bootsrap, JS, PHP, MariaDB ",
-// };
+let spotlas = {
+  ranking: 1,
+  cover: "spotlas.png",
+  video: "spotlas.mp4",
+  link: "https://github.com/Spotlas/Spotlas",
+  name: "Spotlas",
+  description:
+    "A platform showcasing hidden gems and unique places, designed to foster a community for sharing discoveries. Developed by a 4-person team with me as the project leader and backend developer .",
+  date: "November 2024 - June 2025",
+  tech: "HTML, CSS, JS, PHP, MariaDB ",
+  responsive: true
 
+};
+
+let habiTrack = {
+  ranking: 1,
+  cover: "habiTrack.png",
+  video: "habiTrack.mp4",
+  link: "habitrack.erikbergmair.com",
+  name: "HabiTrack",
+  description:
+    "A habit tracking application designed to help users build and maintain good habits with focus on gamification.",
+  date: "February 2025 - June 2025",
+  tech: "HTML, CSS, Bootsrap, JS, PHP, MySQL",
+  responsive: true
+};
+
+let GeoAI = {
+  ranking: 1,
+  cover: "GeoAI.png",
+  video: "GeoAI.mp4",
+  link: "https://github.com/bico37/geoguessr-ai-lerning",
+  name: "GeoAI - Chrome Extension for Geoguessr",
+  description:
+    "A Chrome extension that enhances the Geoguessr experience by providing AI-generated hints and location data.",
+  date: "April 2025 - cuttrently in development",
+  tech: "HTML, CSS, JS, NodeJS, OpenAI API",
+  responsive: false
+};
+
+// not used because hard coded below
 let portfolio = {
   ranking: 1,
-  cover: "adventCalendar.png",
+  cover: "",
   video: "adventCalendar.mp4",
   link: "https://github.com/bico37/Portfolio",
   name: "Portfolio",
@@ -249,10 +278,12 @@ let projects = [
   // babylon3DGame,
   tshirtdesigner,
   adventCalendar,
-  // spotlas,
   soccer2DGame,
   travelPilot,
   // portfolio
+  spotlas,
+  habiTrack,
+  GeoAI,
 ];
 
 // sort projects by date
@@ -310,10 +341,10 @@ function printProjectOverview() {
         `;
 
 
-        for (let i = 0; i < projects.length; i++) {
-          let project = projects[i];
-          let responsive = project.responsive;
-          contentString += `
+  for (let i = 0; i < projects.length; i++) {
+    let project = projects[i];
+    let responsive = project.responsive;
+    contentString += `
               <div class="project" onclick="openLink('${project.link}')">
                   <div class="project-img">
                       <img src="../assets/img/projects/webDev/cover/${project.cover}" alt="${project.name}" />
@@ -326,8 +357,8 @@ function printProjectOverview() {
                   </div>
               </div>
               `;
-      }
-      
+  }
+
 
   document.getElementById("content-wrapper").innerHTML = contentString;
 }
